@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6em;
+    letter-spacing: 0.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  header {
+    text-align: center;
+    padding: 6rem 0;
+  }
+  
+  .textoCentrado {
+    text-align: center;
+  }
+  
+  /* Menu, cómo luce  */
+  #menu {
+    text-align: center;
+    margin: 10px auto;
+    background-color: aqua;
+    width: fit-content;
+    padding: 10px;
+    list-style: none;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Fondos y como luce de manera general*/
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: linear-gradient(to bottom, #118AB2, #073B4C);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor en el que están el main y sidebar */
+  .container {
+    display: flex;
+    justify-content: center;   /* Centra el grupo contenedor horizontalmente */
+    align-items: flex-start;   /* Alinea por arriba */
+    padding: 2rem;
+    gap: 2rem;                 /* Espacio entre contenido y sidebar */
+  }
+  
+  /* Estilo contenido main */
+  .main-content {
+    flex: 2;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Sidebar estilos */
+  .sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* Arrange squares vertically */
+    gap: 1rem;
+  }
+  
+  /* Bloques individuales dentro del sidebar */
+  .square {
+    background: #f7f7f7;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Las imágenes se guardan en cuadros para mantener consistencia */
+  .square img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Para pantallas más pequeñas, estackea verticalmente */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar, .main-content {
+      width: 90%;
+    }
+  }
+  

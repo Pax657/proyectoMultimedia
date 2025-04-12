@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>IM NOT YOU</title>
+  <link rel="stylesheet" href="pruebasCSS.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>IM NOT</h1>
+    <h1>YOU</h1>
+    <h2>¡No pierdas los papeles!</h2>
+    <div class="textoCentrado">Un juego sobre no sé, aún no ha salido</div>
+  </header>
+
+
+  <!-- Main Container: Main content + sidebar -->
+  <div class="container">
+    <!-- Centered Main Content -->
+    <main class="main-content">
+      <h2>Contenido Principal</h2>
+      <p>Aquí va el contenido principal de la página.</p>
+
+      <button aria-label="Mostrar Características" aria-expanded="false" aria-controls="menu" id="menu-button">
+        <h3>Características</h3>
+      </button>
+      <ul id="menu" role="menu" aria-hidden="true" hidden>
+        <li role="menuitem">Eres una gotita bonita</li>
+        <li role="menuitem">No sé, ta bonito</li>
+      </ul>
+
+      <!-- Puedes agregar más secciones según lo necesites -->
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Se divide en cuadros -->
+      <div class="square">
+        <img src="imagenes/eldelaluz.jpg" alt="Imagen 1">
+        <p>Descripción o información para el elemento 1</p>
+      </div>
+      <div class="square">
+        <img src="imagenes/f1.png" alt="Imagen 2">
+        <p>Descripción o información para el elemento 2</p>
+      </div>
+      <!-- Agrega más cuadrados según sea necesario -->
+    </aside>
+  </div>
+
+   <!-- Script del botón -->
+  <script>
+    const button = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', !expanded);
+      menu.hidden = expanded;
+      menu.setAttribute('aria-hidden', expanded);
+    });
+  </script>
+</body>
+</html>
