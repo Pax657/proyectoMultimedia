@@ -28,6 +28,12 @@ html {
   .textoCentrado {
     text-align: center;
   }
+
+  .descripcion{
+    text-align: center;
+    font-size: medium;
+    padding: 2rem 0;
+  }
   
   /* Menu, cómo luce  */
   #menu {
@@ -61,25 +67,57 @@ html {
   /* Estilo contenido main */
   .main-content {
     flex: 2;
-    background: #fff;
     padding: 1.5rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
   }
-  
-  /* Sidebar estilos */
-  .sidebar {
+
+  .left-sidebar {
     flex: 1;
     display: flex;
-    flex-direction: column;  /* Arrange squares vertically */
+    flex-direction: row;
     gap: 1rem;
+    justify-content: space-evenly;
+    padding: 4rem;
+  }
+  .left-sidebar li{
+    text-align: left;
+  }
+
+  /* Sidebar estilos */
+  .sidebar {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;  /* Arrange squares vertically */
+  }
+
+  .caja{
+    background-color: #f7f7f7;
+    display: flex;
+    width: 20rem;
+    height: 10rem;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  .caja li{
+    text-align: left;
+  }
+
+  /* Bloques divisores */
+  .squareDivisores{
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.877);
+    padding: 1rem;
+    width: 12rem;
+    height: 4.5rem;
+    text-align: center;
   }
   
   /* Bloques individuales dentro del sidebar */
   .square {
     background: #f7f7f7;
-    border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
     padding: 1rem;
     text-align: center;
@@ -99,7 +137,7 @@ html {
       flex-direction: column;
       align-items: center;
     }
-    .sidebar, .main-content {
+    .sidebar, .main-content, .left-sidebar{
       width: 90%;
     }
   }
