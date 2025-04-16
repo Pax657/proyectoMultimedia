@@ -49,14 +49,6 @@
               </ul>
             </div>
             </div>
-          
-      <button aria-label="Mostrar Características" aria-expanded="false" aria-controls="menu" id="menu-button">
-        <h3>Características</h3>
-      </button>
-      <ul id="menu" role="menu" aria-hidden="true" hidden>
-        <li role="menuitem">Eres una gotita bonita</li>
-        <li role="menuitem">No sé, ta bonito</li>
-      </ul>
       
       <div class="caja">
         <h3>¡Conócenos!</h3>
@@ -70,29 +62,56 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Se divide en cuadros -->
+
       <div class="square" style="border-radius: 20px 20px 0 0;">
-        <img src="imagenes/eldelaluz.jpg" alt="Imagen 1">
-        <p>Descripción o información para el elemento 1</p>
+        <button class="menu-button" aria-label="1€" aria-expanded="false" aria-controls="menu1" style="width: 100px;">
+          <h4>1€</h4>
+        </button>
+        <ul id="menu1" class="menu" role="menu" aria-hidden="true" hidden>
+          <img src="imagenes/eldelaluz.jpg" alt="Recompensa 1">
+          <li>Vídeo de agradecimiento</li>
+        </ul>
       </div>
+    
       <div class="square">
-        <img src="imagenes/f1.png" alt="Imagen 2">
-        <p>Descripción o información para el elemento 2</p>
+        <button class="menu-button" aria-label="5€" aria-expanded="false" aria-controls="menu2" style="width: 100px;">
+          <h4>5€</h4>
+        </button>
+        <ul id="menu2" class="menu" role="menu" aria-hidden="true" hidden>
+          <img src="imagenes/f1.png" alt="Recompensa 2">
+          <li>Video de agradecimiento</li>
+          <li>Mención en los créditos</li>
+        </ul>
       </div>
-      <!-- Agrega más cuadrados según sea necesario -->
+
+      <div class="square">
+        <button class="menu-button" aria-label="10€" aria-expanded="false" aria-controls="menu3" style="width: 100px;">
+          <h4>10€</h4>
+        </button>
+        <ul id="menu3" class="menu" role="menu" aria-hidden="true" hidden>
+          <img src="imagenes/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <li>Video de agradecimiento</li>
+          <li>Mención en los créditos</li>
+          <li>Un pack de 10 pegatinas exclusivas del juego</li>
+        </ul>
+      </div>
     </aside>
   </div>
 
    <!-- Script del botón -->
-  <script>
-    const button = document.getElementById('menu-button');
-    const menu = document.getElementById('menu');
-
-    button.addEventListener('click', () => {
-      const expanded = button.getAttribute('aria-expanded') === 'true';
-      button.setAttribute('aria-expanded', !expanded);
-      menu.hidden = expanded;
-      menu.setAttribute('aria-hidden', expanded);
+   <script>
+    // Attach event listeners to each button with class "menu-button"
+    document.querySelectorAll('.menu-button').forEach(button => {
+      button.addEventListener('click', () => {
+        // Obtiene el ID de los botones por el atributo aria-controls
+        const menuId = button.getAttribute('aria-controls');
+        const menu = document.getElementById(menuId);
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        // Toggle states
+        button.setAttribute('aria-expanded', !expanded);
+        menu.hidden = expanded;
+        menu.setAttribute('aria-hidden', expanded);
+      });
     });
   </script>
 </body>

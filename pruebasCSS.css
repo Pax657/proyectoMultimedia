@@ -39,12 +39,9 @@ html {
   #menu {
     text-align: center;
     margin: 10px auto;
-    background-color: aqua;
     width: fit-content;
     padding: 10px;
     list-style: none;
-    border-radius: 2px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
   /* Fondos y como luce de manera general*/
@@ -121,6 +118,11 @@ html {
     padding: 1rem;
     text-align: center;
   }
+
+  .square li{
+    text-align: left;
+    margin-bottom: 15px;
+  }
   
   /* Las imágenes se guardan en cuadros para mantener consistencia */
   .square img {
@@ -137,7 +139,7 @@ html {
       align-items: center;
     }
     .sidebar, .main-content, .left-sidebar{
-      width: 90%;
+      width: 70%;
     }
   }
   
