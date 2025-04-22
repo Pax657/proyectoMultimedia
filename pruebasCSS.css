@@ -2,16 +2,16 @@ html {
     scroll-behavior: smooth;
   }
   
-  h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6em;
-    letter-spacing: 0.5em;
-    text-align: center;
+  .title {
+    background-image: url(resources/Titulo.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  
+
   h2 {
-    font-size: 40px;
-    letter-spacing: 4px;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
     text-align: center;
   }
   
@@ -20,6 +20,7 @@ html {
     text-align: center;
   }
   
+
   header {
     text-align: center;
     padding: 6rem 0;
@@ -30,6 +31,18 @@ html {
   }
 
   .descripcion{
+    /*fondo*/
+    background-image: url(resources/papel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*efecto chowder*/
+    background-size: cover;
+
+    /*borde*/
+    border: transparent;
+    border-radius: 5px;
+
+    /*texto*/
     text-align: center;
     font-size: medium;
     padding: 2rem 0;
@@ -46,9 +59,20 @@ html {
   
   /* Fondos y como luce de manera general*/
   body {
-    margin: 0;
+    /*márgenes*/
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
     min-height: 100%;
-    background: linear-gradient(to bottom, #118AB2, #073B4C);
+
+    /*fondo*/
+    background-image: url(resources/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    /*fuentes*/
     font-family: Arial, sans-serif;
   }
   
@@ -57,7 +81,6 @@ html {
     display: flex;
     justify-content: center;   /* Centra el grupo contenedor horizontalmente */
     align-items: flex-start;   /* Alinea por arriba */
-    padding: 2rem;
     gap: 2rem;                 /* Espacio entre contenido y sidebar */
   }
   
@@ -68,13 +91,17 @@ html {
     text-align: center;
   }
 
+/*Sidebar de personajes*/
   .left-sidebar {
-    flex: 1;
     display: flex;
+    flex-shrink: 1;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 1rem;
-    justify-content: space-evenly;
-    padding: 4rem;
+    justify-content: space-around;
+    
+    padding: 2rem;
   }
   .left-sidebar li{
     text-align: left;
@@ -85,17 +112,33 @@ html {
     flex: 0 0 200px;
     display: flex;
     flex-direction: column;  /* Arrange squares vertically */
+    box-sizing: border-box;
+  }
+
+  .hucha {
+    height: 150px;
+    /*fondo*/
+    background-image: url(resources/cerdito.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
   }
 
   .caja{
-    background-color: #f7f7f7;
     display: flex;
+    flex-direction: column;
     width: 20rem;
     height: 10rem;
+
     text-align: center;
-    flex-direction: column;
     margin: auto;
     margin-top: 4rem;
+    
+    /*fondo*/
+    background-image: url(resources/note.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
   }
   .caja li{
     text-align: left;
@@ -104,7 +147,7 @@ html {
   /* Bloques divisores */
   .squareDivisores{
     background: #f7f7f7;
-    border-radius: 8px;
+    border: 8px solid black;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.877);
     padding: 1rem;
     width: 12rem;
@@ -131,15 +174,28 @@ html {
     border-radius: 4px;
     margin-bottom: 0.5rem;
   }
+
+  .footer {
+    /*Posicion y margen*/
+    position: center;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+
+    /*Estilo de letra*/
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+  }
   
   /* Para pantallas más pequeñas, estackea verticalmente */
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .container {
       flex-direction: column;
       align-items: center;
     }
-    .sidebar, .main-content, .left-sidebar{
-      width: 70%;
+    .title {
+      background-size: 100%;
     }
   }
   

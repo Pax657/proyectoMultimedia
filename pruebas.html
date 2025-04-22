@@ -2,22 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>IM NOT YOU</title>
+  <title>I'M NOT YOU</title>
   <link rel="stylesheet" href="pruebasCSS.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <h1>IM NOT</h1>
-    <h1>YOU</h1>
-    <h2>¡No pierdas los papeles!</h2>
-  </header>
+  <header class = "title"></header>
+  <h2>¡No pierdas los papeles!</h2>
 
 
   <!-- Documento: Main content + sidebars -->
   <div class="container">
     <!-- Main -->
     <main class="main-content">
+      <video controls autoplay muted loop width="400" style="padding-bottom: 20px;">
+        <source src = "resources/video/trailer.mp4" alt = "I'm Not You Trailer">
+        No se pudo cargar el video :c
+      </video>
       <div class="descripcion">I’m Not You es un juego de plataformas en 2D al más puro estilo Metroidvania. 
         ¡Adéntrate en su mundo hecho de papel! 
         Podrás controlar a cuatro personajes diferentes y utilizar sus diferentes habilidades para descifrar los secretos de este mundo.</div>
@@ -25,25 +26,22 @@
           <!-- Cajas izquierda -->
           <div class="left-sidebar">
             <div class="squareDivisores">
-              <img src="imagenes/box1.png" alt="Box 1">
-              <ul>
-                <li>Info 1</li>
-                </ul>
+              <button>boton 1</button>
             </div>
             <div class="squareDivisores">
-              <img src="imagenes/box2.png" alt="Box 2">
+              <img src="" alt="Box 2">
               <ul>
                 <li>Info 2</li>
                 </ul>
             </div>
             <div class="squareDivisores">
-              <img src="imagenes/box3.png" alt="Box 3">
+              <img src="" alt="Box 3">
               <ul>
                 <li>Info 3</li>
                 </ul>
             </div>
             <div class="squareDivisores">
-              <img src="imagenes/box4.png" alt="Box 4">
+              <img src="" alt="Box 4">
               <ul>
               <li>Info 4</li>
               </ul>
@@ -52,12 +50,8 @@
       
       <div class="caja">
         <h3>¡Conócenos!</h3>
-        <ul>
-          <li>hola</li>
-        </ul>
+        <span>hola</span>
       </div>
-
-      <!-- Puedes agregar más secciones según lo necesites -->
     </main>
 
     <!-- Sidebar -->
@@ -68,7 +62,7 @@
           <h4>1€</h4>
         </button>
         <ul id="menu1" class="menu" role="menu" aria-hidden="true" hidden>
-          <img src="imagenes/eldelaluz.jpg" alt="Recompensa 1">
+          <img src="resources/eldelaluz.jpg" alt="Recompensa 1">
           <li>Vídeo de agradecimiento</li>
         </ul>
       </div>
@@ -78,7 +72,7 @@
           <h4>5€</h4>
         </button>
         <ul id="menu2" class="menu" role="menu" aria-hidden="true" hidden>
-          <img src="imagenes/f1.png" alt="Recompensa 2">
+          <img src="resources/f1.png" alt="Recompensa 2">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
         </ul>
@@ -89,14 +83,21 @@
           <h4>10€</h4>
         </button>
         <ul id="menu3" class="menu" role="menu" aria-hidden="true" hidden>
-          <img src="imagenes/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
           <li>Un pack de 10 pegatinas exclusivas del juego</li>
         </ul>
       </div>
+
+      <div class = "hucha"></div>
     </aside>
   </div>
+
+  <!-- Footer-->
+  <footer class="footer"> 
+    ©VrGames 2025
+  </footer>
 
    <!-- Script del botón -->
    <script>

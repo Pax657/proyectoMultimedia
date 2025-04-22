@@ -1,0 +1,4 @@
+- Botones de los personajes
+- Lista de Recompensas
+- Conócenos
+- Cambiar algunos diseños
