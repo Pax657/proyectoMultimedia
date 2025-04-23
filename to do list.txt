@@ -1,4 +1,2 @@
-- Botones de los personajes
-- Lista de Recompensas
-- Conócenos
+- Añadir nuestra crew
 - Cambiar algunos diseños

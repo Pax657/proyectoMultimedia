@@ -21,36 +21,40 @@
       </video>
       <div class="descripcion">I’m Not You es un juego de plataformas en 2D al más puro estilo Metroidvania. 
         ¡Adéntrate en su mundo hecho de papel! 
-        Podrás controlar a cuatro personajes diferentes y utilizar sus diferentes habilidades para descifrar los secretos de este mundo.</div>
-    
-          <!-- Cajas izquierda -->
-          <div class="left-sidebar">
-            <div class="squareDivisores">
-              <button>boton 1</button>
-            </div>
-            <div class="squareDivisores">
-              <img src="" alt="Box 2">
-              <ul>
-                <li>Info 2</li>
-                </ul>
-            </div>
-            <div class="squareDivisores">
-              <img src="" alt="Box 3">
-              <ul>
-                <li>Info 3</li>
-                </ul>
-            </div>
-            <div class="squareDivisores">
-              <img src="" alt="Box 4">
-              <ul>
-              <li>Info 4</li>
-              </ul>
-            </div>
-            </div>
-      
+        Podrás controlar a cuatro personajes diferentes y utilizar sus diferentes habilidades para descifrar los secretos de este mundo.
+      </div>
+
+      <!-- Botones personajes -->
+      <div class="left-sidebar">
+            <button class="botonPersonaje" id="gota" onclick="toggle('infoGota')"></button>
+            <button class="botonPersonaje" id="sol" onclick="toggle('infoSol')"></button>
+            <button class="botonPersonaje" id="trebol" onclick="toggle('infoTrebol')"></button>
+            <button class="botonPersonaje" id="sinson" onclick="toggle('infoSinson')"></button>
+      </div>
+
+      <!-- Info personajes -->
+      <div class="infoPersonaje" id="infoGota" style="display: none;">
+        gota: huele a cloaca
+      </div>
+      <div class="infoPersonaje" id="infoSol" style="display: none;">
+        sol: el dios de Andalucía
+      </div>
+      <div class="infoPersonaje" id="infoTrebol" style="display: none;">
+        trébol: no tiene sprite xd
+      </div>
+      <div class="infoPersonaje" id="infoSinson" style="display: none;">
+        sinson: sinson
+      </div>
+
+      <!-- Conócenos -->
       <div class="caja">
         <h3>¡Conócenos!</h3>
-        <span>hola</span>
+        <button style="border: transparent; background: transparent;" onclick="about()" id="mas">Saber Más</button>
+      </div>
+
+      <!-- El equipo -->
+      <div class="equipo" id="text" style="display: none;">
+        hola
       </div>
     </main>
 
@@ -58,31 +62,31 @@
     <aside class="sidebar">
 
       <div class="square" style="border-radius: 20px 20px 0 0;">
-        <button class="menu-button" aria-label="1€" aria-expanded="false" aria-controls="menu1" style="width: 100px;">
+        <button class="menu-button" style="width: 100px;" onclick="showHide('menu1')">
           <h4>1€</h4>
         </button>
-        <ul id="menu1" class="menu" role="menu" aria-hidden="true" hidden>
+        <ul id="menu1" style="display: none;">
           <img src="resources/eldelaluz.jpg" alt="Recompensa 1">
           <li>Vídeo de agradecimiento</li>
         </ul>
       </div>
     
       <div class="square">
-        <button class="menu-button" aria-label="5€" aria-expanded="false" aria-controls="menu2" style="width: 100px;">
+        <button class="menu-button" style="width: 100px;" onclick="showHide('menu2')">
           <h4>5€</h4>
         </button>
-        <ul id="menu2" class="menu" role="menu" aria-hidden="true" hidden>
+        <ul id="menu2" style="display: none;">
           <img src="resources/f1.png" alt="Recompensa 2">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
         </ul>
       </div>
 
-      <div class="square">
-        <button class="menu-button" aria-label="10€" aria-expanded="false" aria-controls="menu3" style="width: 100px;">
+      <div class="square" style="border-radius: 0 0 20px 20px;">
+        <button class="menu-button" style="width: 100px;" onclick="showHide('menu3')">
           <h4>10€</h4>
         </button>
-        <ul id="menu3" class="menu" role="menu" aria-hidden="true" hidden>
+        <ul id="menu3" style="display: none;">
           <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
@@ -99,21 +103,8 @@
     ©VrGames 2025
   </footer>
 
-   <!-- Script del botón -->
-   <script>
-    // Attach event listeners to each button with class "menu-button"
-    document.querySelectorAll('.menu-button').forEach(button => {
-      button.addEventListener('click', () => {
-        // Obtiene el ID de los botones por el atributo aria-controls
-        const menuId = button.getAttribute('aria-controls');
-        const menu = document.getElementById(menuId);
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        // Toggle states
-        button.setAttribute('aria-expanded', !expanded);
-        menu.hidden = expanded;
-        menu.setAttribute('aria-hidden', expanded);
-      });
-    });
-  </script>
+  <!-- Script de los botones-->
+  <script src="test.js"></script>
+
 </body>
 </html>
