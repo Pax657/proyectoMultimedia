@@ -232,12 +232,42 @@ html {
     text-align: left;
   }
 
-  .equipo {
-    background-color: aquamarine;;
-    margin-top: 2rem;
-    text-align: center;
-    padding: 100px;
-  }
+.equipo {
+    /*representacion de elementos*/
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+
+    /*borde y margen*/
+    margin-top: 1rem;
+    padding: 1rem;
+
+    /*fondo*/
+    background-image: url(resources/notebook.jpg);
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: fixed; /*efecto chowder*/
+    background-size: cover;
+}
+    /*hijos de equipo*/
+    .equipo > * {
+        padding: 1rem;
+        background-color: aquamarine;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /*fotos de perfil*/
+.img {
+    background-color: transparent;
+    border: transparent;
+    width: 100%;
+    height: auto;
+}
+
 
   /*=======*/
   /*Footer*/

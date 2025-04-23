@@ -44,11 +44,11 @@ function about() {
     const element = document.getElementById('text');
     const button = document.getElementById('mas')
 
-    if (element.style.display === 'block') {
+    if (element.style.display === 'grid') {
         button.innerHTML = "Saber Más";
         element.style.display = 'none';
     } else {
         button.innerHTML = "Saber Menos";
-        element.style.display = 'block';
+        element.style.display = 'grid';
     }
 }
