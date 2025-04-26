@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
 @font-face {
   font-family: "MyFont";
   src: url(resources/fonts/MyFont-Regular[WIP].otf);
@@ -14,14 +16,21 @@ html {
 
   h2 {
     font-size: clamp(10px, 1.8rem, 100px);
-    font-family: Arial;
     letter-spacing: 0.2rem;
     text-align: center;
+  
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: italic;
   }
   
   h3 {
     font-size: 25px;
     text-align: center;
+
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
   
   header {
@@ -48,7 +57,7 @@ html {
     /*texto*/
     text-align: center;
     font-size: medium;
-    padding: 2rem 0;
+    padding: 2rem;
     line-height: 1.5;
     vertical-align: middle;
   }
@@ -291,23 +300,23 @@ html {
     }
 
     #david{
-      background-color: blueviolet;
+      background-color: rgb(167, 117, 77);
     }
 
     #javi {
-      background-color: aquamarine;
+      background-color: rgb(15, 163, 177);
     }
 
     #vazquez {
-      background-color: yellowgreen;
+      background-color: rgb(208, 227, 127);
     }
 
     #marina {
-      background-color: yellow;
+      background-color: rgb(244, 157, 110);
     }
 
     #pablo {
-      background-color: fuchsia;
+      background-color: rgb(156, 124, 165);
     }
 
 

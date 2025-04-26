@@ -21,7 +21,7 @@ function toggle(id) {
 
 //Función para mostrar u ocultar bloques de forma apilada.
 //USADO PARA LA BARRA DE RECOMPENSAS
-const menus = ['menu1', 'menu2', 'menu3'];
+const menus = ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6', 'menu7', 'menu8', 'menu9', 'menu10', 'menu11'];
 
 function showHide(id) {
     menus.forEach(buttonId => {
