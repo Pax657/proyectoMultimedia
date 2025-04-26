@@ -1,17 +1,21 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(resources/fonts/MyFont-Regular[WIP].otf);
+}
+
 html {
     scroll-behavior: smooth;
   }
-  
+
   .title {
-    background-image: url(resources/Titulo.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    height: auto;
   }
 
   h2 {
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
+    font-size: clamp(10px, 1.8rem, 100px);
+    font-family: Arial;
+    letter-spacing: 0.2rem;
     text-align: center;
   }
   
@@ -20,7 +24,6 @@ html {
     text-align: center;
   }
   
-
   header {
     text-align: center;
     padding: 6rem 0;
@@ -46,6 +49,8 @@ html {
     text-align: center;
     font-size: medium;
     padding: 2rem 0;
+    line-height: 1.5;
+    vertical-align: middle;
   }
   
   /* Menu, cómo luce  */
@@ -73,7 +78,8 @@ html {
     background-size: cover;
 
     /*fuentes*/
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
   }
   
   /* Contenedor en el que están el main y sidebar */
@@ -200,12 +206,8 @@ html {
     margin-bottom: 0.5rem;
   }
   .hucha {
-    height: 150px;
-    /*fondo*/
-    background-image: url(resources/cerdito.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
+    width: 100%;
+    height: auto;
   }
 
   /*=========*/
@@ -217,11 +219,16 @@ html {
     flex-direction: column;
     width: 20rem;
     height: 10rem;
-
-    text-align: center;
     margin: auto;
-    margin-top: 4rem;
-    
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    justify-content: center;
+
+    /*texto*/
+    font-size: medium;
+    text-align: center;
+
     /*fondo*/
     background-image: url(resources/note.png);
     background-repeat: no-repeat;
@@ -230,6 +237,20 @@ html {
   }
   .caja li{
     text-align: left;
+  }
+
+  .saber {
+    border: transparent; 
+    background: transparent;
+    cursor: pointer;
+
+    align-self: center;
+    width: 35%;
+    font-size: medium;
+  }
+
+  .saber:hover {
+    text-decoration: underline;
   }
 
 .equipo {
@@ -245,6 +266,9 @@ html {
     margin-top: 1rem;
     padding: 1rem;
 
+    /*texto*/
+    font-size: medium;
+
     /*fondo*/
     background-image: url(resources/notebook.jpg);
     background-repeat: repeat;
@@ -254,16 +278,43 @@ html {
 }
     /*hijos de equipo*/
     .equipo > * {
-        padding: 1rem;
-        background-color: aquamarine;
-        border-radius: 10px;
-        text-align: center;
+        margin: 1rem;
     }
+
+    .bio {
+      border-radius: 0px 25px 25px 0px;
+      text-align: center;
+      justify-content: center;
+      padding: 2rem 0;
+
+      line-height: 1.5;
+    }
+
+    #david{
+      background-color: blueviolet;
+    }
+
+    #javi {
+      background-color: aquamarine;
+    }
+
+    #vazquez {
+      background-color: yellowgreen;
+    }
+
+    #marina {
+      background-color: yellow;
+    }
+
+    #pablo {
+      background-color: fuchsia;
+    }
+
 
     /*fotos de perfil*/
 .img {
     background-color: transparent;
-    border: transparent;
+    border-radius: 20px;
     width: 100%;
     height: auto;
 }
@@ -292,6 +343,7 @@ html {
 
   /* Para pantallas más pequeñas, estackea verticalmente */
   @media (max-width: 900px) {
+
     .container {
       flex-direction: column;
       align-items: center;
@@ -303,7 +355,8 @@ html {
       flex-wrap: wrap;
     }
     .sidebar {
-      padding: 20%;
+      padding-left: 20%;
+      padding-right: 20%;
     }
     .hucha {
       width: 200px;
