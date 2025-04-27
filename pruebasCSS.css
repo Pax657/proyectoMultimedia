@@ -265,14 +265,12 @@ html {
 .equipo {
     /*representacion de elementos*/
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: auto;
-    align-content: center;
-    justify-content: center;
-    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    place-content: center;
+    gap: 1rem;
 
     /*borde y margen*/
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 1rem;
 
     /*texto*/
@@ -286,8 +284,10 @@ html {
     background-size: cover;
 }
     /*hijos de equipo*/
+
     .equipo > * {
-        margin: 1rem;
+      margin: 1rem;
+      
     }
 
     .bio {
@@ -295,7 +295,17 @@ html {
       text-align: center;
       justify-content: center;
       padding: 2rem 0;
+      line-height: 1.5;
+    }
 
+    .head {
+      grid-column: 1 / span 2;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .foot {
+      grid-column: 1 / span 2;
       line-height: 1.5;
     }
 
