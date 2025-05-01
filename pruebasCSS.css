@@ -357,11 +357,20 @@ html {
 /*=======*/
 
 .musica {
-    display: flex;
-    flex-direction: row;
-    background-color: aqua;
+  padding: 2rem;
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 8rem;
+  justify-content: space-around;
 }
-
+.bloque-cancion{
+  padding: 4rem;
+  height: 6rem;
+  background: white;
+  text-align: center;
+  border: 2px solid black;
+}
   
 
   /*=======*/
