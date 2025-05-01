@@ -190,8 +190,9 @@ html {
   /* Sidebar estilos */
 .sidebar {
     flex: 0 0 200px;
+    max-width: 200px;
     display: flex;
-    flex-direction: column; /* Arrange squares vertically */
+    flex-direction: column; /* Pone los cuadros en vertical */
     box-sizing: border-box;
 }
 
