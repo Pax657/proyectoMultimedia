@@ -145,6 +145,7 @@ html {
 
 .botonPersonaje:hover {
   border: 1px solid black;
+  cursor: pointer;
 }
 
 /*Definición de cada imagen de personaje*/
@@ -211,6 +212,8 @@ html {
   .square li{
     text-align: left;
     margin-bottom: 15px;
+    color: black;
+    font-size: medium;
   }
   
   /* Las imágenes se guardan en cuadros para mantener consistencia */
@@ -223,6 +226,10 @@ html {
   .hucha {
     width: 100%;
     height: auto;
+  }
+
+  .menu-button:hover{
+    cursor: pointer;
   }
 
   /*=========*/
