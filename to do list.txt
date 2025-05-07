@@ -1,2 +1,6 @@
-- Añadir nuestra crew
+- Meter música
+- Descripción personajes
+- Función de "donar"
+- Meter texto que falta
+- Animaciones
 - Cambiar algunos diseños

@@ -41,26 +41,6 @@ html {
   .textoCentrado {
     text-align: center;
   }
-
-  .descripcion{
-    /*fondo*/
-    background-image: url(resources/papel.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /*efecto chowder*/
-    background-size: cover;
-
-    /*borde*/
-    border: transparent;
-    border-radius: 5px;
-
-    /*texto*/
-    text-align: center;
-    font-size: medium;
-    padding: 2rem;
-    line-height: 1.5;
-    vertical-align: middle;
-  }
   
   /* Menu, cómo luce  */
   #menu {
@@ -104,6 +84,27 @@ html {
     flex: 2;
     padding: 1.5rem;
     text-align: center;
+  }
+
+  .descripcion{
+    /*fondo*/
+    background-image: url(resources/papel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*efecto chowder*/
+    background-size: cover;
+
+    /*borde*/
+    border: transparent;
+    border-radius: 5px;
+
+    /*texto*/
+    align-self: center;
+    text-align: center;
+    font-size: medium;
+    padding: 2rem;
+    line-height: 1.5;
+    vertical-align: middle;
   }
 
 /*===================*/
@@ -361,8 +362,8 @@ html {
 /*=======*/
 
 .musica {
-  padding: 2rem;
-  padding-top: 8rem;
+  padding: 1rem;
+  padding-top: 4rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 8rem;
@@ -375,6 +376,7 @@ html {
   text-align: center;
   border: 2px solid black;
 }
+
   
 
   /*=======*/
@@ -399,7 +401,7 @@ html {
   /*=====*/
 
   /* Para pantallas más pequeñas, estackea verticalmente */
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
 
     .container {
       flex-direction: column;
@@ -411,10 +413,7 @@ html {
     .left-sidebar {
       flex-wrap: wrap;
     }
-    .sidebar {
-      padding-left: 20%;
-      padding-right: 20%;
-    }
+
     .hucha {
       width: 200px;
       align-self: center;
@@ -422,6 +421,10 @@ html {
 
     .equipo {
         grid-template-columns: 30% 70%;
+    }
+
+    .musica {
+      grid-gap: 4rem;
     }
   }
   
