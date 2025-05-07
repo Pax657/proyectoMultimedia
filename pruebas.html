@@ -25,12 +25,12 @@
       </div>
 
       <!-- Botones personajes -->
-      <div class="left-sidebar">
+      <aside class="left-sidebar">
             <button class="botonPersonaje" id="gota" onclick="toggle('infoGota')"></button>
             <button class="botonPersonaje" id="sol" onclick="toggle('infoSol')"></button>
             <button class="botonPersonaje" id="trebol" onclick="toggle('infoTrebol')"></button>
             <button class="botonPersonaje" id="sinson" onclick="toggle('infoSinson')"></button>
-      </div>
+      </aside>
 
       <!-- Info personajes -->
       <div class="infoPersonaje" id="infoGota" style="display: none;">
@@ -60,19 +60,19 @@
           VrGames es una empresa indie formada por… ¡Nosotros! Seis colgados que decidimos hipotecar nuestra casa para seguir adelante con este proyecto. Sin embargo, el señor del monopoly ya está cansándose y aún necesitamos un poco de dinero…
         </div>
 
-        <img class="img" src="resources/mari.png" alt="marina">
+        <img class="img" src="resources/mari.png" alt="Perfil de Marina">
         <div class="bio" id="marina"> En el apartado de dirección artística tenemos a Marina, una brillante graduada en la universidad de la vida con más de 300 premios por su arte. </div>
           
-        <img class="img" src="resources/j.jpg" alt="javi">
+        <img class="img" src="resources/j.jpg" alt="Perfil de Javi">
         <div class="bio" id="javi"> Como artista de a bordo tenemos a Javier Borriño, un médico  aventurero que decidió pasarse con nosotros al mundo del desarrollo de videojuegos. </div>
 
-        <img class="img" src="resources/pablo.png" alt="pablo">
+        <img class="img" src="resources/pablo.png" alt="Perfil de Pablo">
         <div class="bio" id="pablo"> Pablo Cordero, un mexicano que decidió probar suerte en España con su tienda de tacos. Fracasó. Ahora es nuestro programador senior. </div>
 
-        <img class="img" src="resources/beni.png" alt="david">
+        <img class="img" src="resources/beni.png" alt="Perfil de David">
         <div class="bio" id="david"> David Benitez, padre divorciado de cinco hijos, sirve como programador en prácticas y como editor profesional de vídeo. </div>
 
-        <img class="img" src="resources/javi.png" alt="vázquez"> 
+        <img class="img" src="resources/javi.png" alt="Perfil de Vázquez"> 
         <div class="bio" id="vazquez"> En el apartado musical y de redacción tenemos a Javier Vázquez, un chaval guatemalteco al que rescatamos de un traficante de personas.  </div>
         
         <div class="foot">
@@ -83,7 +83,14 @@
           <!-- Musica -->
 
     <div class="musica">
-      <div class="bloque-cancion">Cancion 1</div>
+      <div class="bloque-cancion">
+        <img src="menuMusica7.png">
+        <audio controls>
+          <source src="MENU_ImNotYou.mp3" type="audio/ogg">
+          <source src="MENU_ImNotYou.mp3" type="audio/mpeg">
+          No se pudo reproducir el audio T^T
+      </audio>
+      </div>
       <div class="bloque-cancion">Cancion 2</div>
       <div class="bloque-cancion">Cancion 3</div>
       <div class="bloque-cancion">Cancion 4</div>
@@ -92,6 +99,7 @@
 
 
     <!-- Sidebar -->
+     <div class="contenedorSidebar">
     <aside class="sidebar">
 
       <div class="square" style="border-radius: 20px 20px 0 0;">
@@ -99,7 +107,7 @@
           <h4>1€</h4>
         </button>
         <ul id="menu1" style="display: none;">
-          <img src="resources/eldelaluz.jpg" alt="Recompensa 1">
+          <img src="resources/recompensas/RecompensaUNO.png" alt="Recompensa 1">
           <li>Vídeo de agradecimiento</li>
         </ul>
       </div>
@@ -109,7 +117,7 @@
           <h4>5€</h4>
         </button>
         <ul id="menu2" style="display: none;">
-          <img src="resources/f1.png" alt="Recompensa 2">
+          <img src="resources/recompensas/RecompensaDOS.png" alt="Recompensa 2">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
         </ul>
@@ -120,7 +128,7 @@
           <h4>10€</h4>
         </button>
         <ul id="menu3" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaTRES.png" alt="Recompensa 3">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
           <li>Un pack de 10 pegatinas exclusivas del juego</li>
@@ -132,7 +140,7 @@
           <h4>20€</h4>
         </button>
         <ul id="menu4" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaCUATRO.png" alt="Recompensa 3">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
           <li>Un pack de 10 pegatinas exclusivas del juego</li>
@@ -145,7 +153,7 @@
           <h4>30€</h4>
         </button>
         <ul id="menu5" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaCINCO.png" alt="Recompensa 3">
           <li>Video de agradecimiento</li>
           <li>Mención en los créditos</li>
           <li>Un pack de 10 pegatinas exclusivas del juego</li>
@@ -159,7 +167,7 @@
           <h4>50€</h4>
         </button>
         <ul id="menu6" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaSEIS.png" alt="Recompensa 3">
           <li>Todo lo anterior</li>
           <li>Una edición física de edición limitada del juego</li>
         </ul>
@@ -170,7 +178,7 @@
           <h4>75€</h4>
         </button>
         <ul id="menu7" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaSIETE.png" alt="Recompensa 3">
           <li>Todo lo anterior</li>
           <li>Una figurita especial del juego</li>
         </ul>
@@ -181,7 +189,7 @@
           <h4>100€</h4>
         </button>
         <ul id="menu8" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaOCHO.png" alt="Recompensa 3">
           <li>Todo lo anterior</li>
           <li>Un disco de vinillo con la banda sonora del juego y un video de los desarrolladores diciendo la palabra que elijas cien veces
           </li>
@@ -193,7 +201,7 @@
           <h4>200€</h4>
         </button>
         <ul id="menu9" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaNUEVE.png" alt="Recompensa 3">
           <li>Todo lo anterior</li>
           <li>Aparecerás en el juego como un NPC</li>
         </ul>
@@ -204,7 +212,7 @@
           <h4>500€</h4>
         </button>
         <ul id="menu10" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaDIEZ.png" alt="Recompensa 3">
           <li>Todo lo anterior</li>
           <li>Joyería del juego y una edición física hiper-limitada dorada del juego</li>
         </ul>
@@ -215,7 +223,7 @@
           <h4>1000€</h4>
         </button>
         <ul id="menu11" style="display: none;">
-          <img src="resources/Rosalia Jannetti Diaz de Borge.jpg" alt="Recompensa 3">
+          <img src="resources/recompensas/RecompensaONCE.png" alt="Recompensa 3">
           <li>Todo lo anterior</li>
           <li>Si de verdad vas a donar esa cantidad, entonces el desarrollador Javi Vázquez se abre un Only Fans de pies y te regala el premium</li>
         </ul>
@@ -223,8 +231,9 @@
       
       
 
-      <img src="resources/cerdito.png" class = "hucha">
+      <img src="resources/IMG_1882.GIF" class = "hucha">
     </aside>
+  </div>
   </div>
 
   <!-- Footer-->

@@ -188,6 +188,10 @@ html {
 /*SIDEBAR*/
 /*======*/
 
+.contenedorSidebar{
+  position: absolute;
+  right: 6rem;
+}
   /* Sidebar estilos */
 .sidebar {
     flex: 0 0 200px;
