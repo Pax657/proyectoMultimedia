@@ -13,6 +13,7 @@
 
   <!-- Documento: Main content + sidebars -->
   <div class="container">
+  <div class="sidebarWrap">
     <!-- Main -->
     <main class="main-content">
       <video controls autoplay muted loop width="400" style="padding-bottom: 20px;">
@@ -84,24 +85,41 @@
 
     <div class="musica">
       <div class="bloque-cancion">
-        <img src="menuMusica7.png">
+        <img src="resources/musica/menuMusica7.png" style="height: inherit; width: inherit;"></img>
         <audio controls>
-          <source src="MENU_ImNotYou.mp3" type="audio/ogg">
-          <source src="MENU_ImNotYou.mp3" type="audio/mpeg">
+          <source src="resources/musica/MENU_ImNotYou.mp3" type="audio/ogg">
+          <source src="resources/musica/MENU_ImNotYou.mp3" type="audio/mpeg">
           No se pudo reproducir el audio T^T
       </audio>
       </div>
-      <div class="bloque-cancion">Cancion 2</div>
-      <div class="bloque-cancion">Cancion 3</div>
-      <div class="bloque-cancion">Cancion 4</div>
+      <div class="bloque-cancion">
+        <img src="resources/musica/menuMusica4.png" style="height: inherit; width: inherit;"></img>
+      <audio controls>
+        <source src="resources/musica/The Path to Wordstown.mp3" type="audio/ogg">
+        <source src="resources/musica/The Path to Wordstown.mp3" type="audio/mpeg">
+        No se pudo reproducir el audio T^T
+    </audio>
   </div>
+      <div class="bloque-cancion">
+        <img src="resources/musica/menuMusica1.png"style="height: inherit; width: inherit;"></img>
+        <audio controls>
+          <source src="resources/musica/Scara can give ya what ya need!.mp3" type="audio/ogg">
+          <source src="resources/musica/Scara can give ya what ya need!.mp3" type="audio/mpeg">
+          No se pudo reproducir el audio T^T
+      </div>
+      <div class="bloque-cancion">
+        <img src="resources/musica/menuMusica6.png"style="height: inherit; width: inherit;"></img>
+      <audio controls>
+        <source src="resources/musica/EyeSEEYou (1).mp3" type="audio/ogg">
+        <source src="resources/musica/EyeSEEYou (1).mp3" type="audio/mpeg">
+        No se pudo reproducir el audio T^T
+      </div>
+    </div>
     </main>
 
 
     <!-- Sidebar -->
-     <div class="contenedorSidebar">
-    <aside class="sidebar">
-
+     <aside class="sidebar">
       <div class="square" style="border-radius: 20px 20px 0 0;">
         <button class="menu-button" style="width: 100px;" onclick="showHide('menu1')">
           <h4>1€</h4>
@@ -235,6 +253,7 @@
     </aside>
   </div>
   </div>
+</div>
 
   <!-- Footer-->
   <footer class="footer"> 

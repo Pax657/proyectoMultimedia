@@ -81,9 +81,10 @@ html {
   
   /* Estilo contenido main */
   .main-content {
-    flex: 2;
+    flex: 1;
     padding: 1.5rem;
     text-align: center;
+    margin-right: 1rem;
   }
 
   .descripcion{
@@ -189,15 +190,20 @@ html {
 /*SIDEBAR*/
 /*======*/
 
-.contenedorSidebar{
-  position: absolute;
-  right: 6rem;
-}
   /* Sidebar estilos */
+
+  .sidebarWrap{
+    display: flex;
+    align-items: flex-start;
+  }
 .sidebar {
     flex: 0 0 200px;
-    max-width: 200px;
+    margin-left: auto;  
+    position: sticky;
+    top: 30px;
+    padding-bottom: 150px;
     display: flex;
+    max-width: 200px;
     flex-direction: column; /* Pone los cuadros en vertical */
     box-sizing: border-box;
 }
@@ -372,9 +378,7 @@ html {
 .bloque-cancion{
   padding: 4rem;
   height: 6rem;
-  background: white;
   text-align: center;
-  border: 2px solid black;
 }
 
   
@@ -425,6 +429,10 @@ html {
 
     .musica {
       grid-gap: 4rem;
+    }
+
+    .sidebar{
+      position: static;
     }
   }
   
