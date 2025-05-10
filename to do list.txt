@@ -1,4 +1,3 @@
-- Meter música
 - Descripción personajes
 - Función de "donar"
 - Meter texto que falta
