@@ -9,14 +9,26 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="resources/Titulo.png" class="title">
+    <img src="resources/Titulo.png" alt="I'm Not You" class="title">
     <h2>¡No pierdas los papeles!</h2>
+
+      <section class="menu" id="menu" style="font-size: large;">
+        <a href="#desc">Descripción</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#about">Conócenos</a>
+        <a href="#art">Arte</a>
+        <a href="#art">Música</a>
+        <a href="#music">Donar</a>
+        <a href="#reward">Recompensas</a>
+        <a href="#faq">FAQ</a>
+      </section>
   </header>
   <!-- Documento: Main content + sidebars -->
   <div class="container">
   <div class="sidebarWrap">
     <!-- Main -->
     <main class="main-content">
+
       <!--Video-->
       <video controls autoplay muted loop width="500" style="padding-bottom: 20px;">
         <source src = "resources/video/trailer.mp4" alt = "I'm Not You Trailer">
@@ -24,53 +36,53 @@
       </video>
 
       <!--Sinopsis-->
-      <div class="descripcion">I’m Not You es un juego de plataformas en 2D al más puro estilo Metroidvania.
+      <section class="descripcion" id="desc">I’m Not You es un juego de plataformas en 2D al más puro estilo Metroidvania.
         ¡Adéntrate en su mundo hecho de papel! 
         Podrás controlar a cuatro personajes diferentes y utilizar sus diferentes habilidades para descifrar los secretos de este mundo.
-      </div>
+      </section>
 
       <!-- Botones personajes -->
-      <div class="left-sidebar">
+      <section class="left-sidebar" id="personajes">
           <div class="botonPersonaje">
-            <img src="resources/box1.png">
-            <button id="gota" onclick="toggle('infoGota')">Gota</button>
+            <img src="resources/box1.png" alt="Gota">
+            <a id="gota" onclick="toggle('infoGota')">Gota</a>
           </div>
 
           <div class="botonPersonaje">
-            <img src="resources/box2.png">
-            <button id="sol" onclick="toggle('infoSol')">Sol</button>
+            <img src="resources/box2.png" alt="Sol">
+            <a id="sol" onclick="toggle('infoSol')">Sol</a>
           </div>
 
           <div class="botonPersonaje">
-            <img src="resources/box3.png">
-            <button id="trebol" onclick="toggle('infoTrebol')">Trébol</button>
+            <img src="resources/box3.png" alt="Trébol">
+            <a id="trebol" onclick="toggle('infoTrebol')">Trébol</a>
           </div>
 
           <div class="botonPersonaje">
-            <img src="resources/box4.png">
-            <button id="sinson" onclick="toggle('infoSinson')">Demon</button>
+            <img src="resources/box4.png" alt="Demon">
+            <a id="sinson" onclick="toggle('infoSinson')">Demon</a>
           </div>
-      </div>
+      </section>
 
       <!-- Info personajes -->
-      <div class="infoPersonaje" id="infoGota" style="display: none;">
+      <section class="infoPersonaje" id="infoGota" style="display: none;">
         Huele a cloaca
-      </div>
-      <div class="infoPersonaje" id="infoSol" style="display: none;">
+      </section>
+      <section class="infoPersonaje" id="infoSol" style="display: none;">
         El dios de Andalucía
-      </div>
-      <div class="infoPersonaje" id="infoTrebol" style="display: none;">
+      </section>
+      <section class="infoPersonaje" id="infoTrebol" style="display: none;">
         Adicto a las apuestas
-      </div>
-      <div class="infoPersonaje" id="infoSinson" style="display: none;">
+      </section>
+      <section class="infoPersonaje" id="infoSinson" style="display: none;">
         Hola
-      </div>
+      </section>
 
       <!-- Conócenos -->
-      <div class="caja">
+      <section class="caja" id="about">
         <h3>¡Conócenos!</h3>
-        <button class="saber" onclick="about()" id="mas">Saber Más</button>
-      </div>
+        <a class="saber" href="#text" onclick="about()" id="mas">Saber Más</a>
+      </section>
 
       <!-- El equipo -->
       <div class="equipo" id="text" style="display: none;">
@@ -99,14 +111,22 @@
         ¡Y esos somos nosotros! Podéis seguirnos en redes sociales para ver cómo avanzamos en nuestro proyecto, ¡no olvidéis compartirlo con vuestros amigos!
       </div>
       </div>
+
+      <!-- Arte -->
+      <section class="arte" id="art">
+        <h2>🎨 ARTE 🎨</h2>
+        <img src="resources/Pruebas/1.png" alt="Arte 1" style="height: auto; width: 100%;"></img>
+        <img src="resources/Pruebas/2.png" alt="Arte 2" style="height: auto; width: 100%;"></img>
+        <img src="resources/Pruebas/3.png" alt="Arte 3" style="height: auto; width: 100%;"></img>
+      </section>
       
       <!-- Musica -->
-      <div class="musica">
+      <section class="musica" id="music">
       <div class="bloque-cancion" id="musica">
         <h2>🎵 MÚSICA 🎵</h2>
       </div>
       <div class="bloque-cancion">
-        <img src="resources/musica/menuMusica7.png" style="height: auto; width: 100%;"></img>
+        <img src="resources/musica/menuMusica7.png" alt="I'm Not You" style="height: auto; width: 100%;"></img>
         <audio controls>
           <source src="resources/musica/MENU_ImNotYou.mp3" type="audio/ogg">
           <source src="resources/musica/MENU_ImNotYou.mp3" type="audio/mpeg">
@@ -114,7 +134,7 @@
       </audio>
       </div>
       <div class="bloque-cancion">
-        <img src="resources/musica/menuMusica4.png" style="height: auto; width: 100%;"></img>
+        <img src="resources/musica/menuMusica4.png" alt="The Path to Wordstown" style="height: auto; width: 100%;"></img>
         <audio controls>
           <source src="resources/musica/The Path to Wordstown.mp3" type="audio/ogg">
           <source src="resources/musica/The Path to Wordstown.mp3" type="audio/mpeg">
@@ -122,23 +142,23 @@
         </audio>
       </div>
       <div class="bloque-cancion">
-        <img src="resources/musica/menuMusica1.png"style="height: auto; width: 100%;"></img>
+        <img src="resources/musica/menuMusica1.png" alt="Scara can give ya what ya need!" style="height: auto; width: 100%;"></img>
         <audio controls>
           <source src="resources/musica/Scara can give ya what ya need!.mp3" type="audio/ogg">
           <source src="resources/musica/Scara can give ya what ya need!.mp3" type="audio/mpeg">
           No se pudo reproducir el audio T^T
       </div>
       <div class="bloque-cancion">
-        <img src="resources/musica/menuMusica6.png"style="height: auto; width: 100%;"></img>
+        <img src="resources/musica/menuMusica6.png" alt="EyeSEEYou" style="height: auto; width: 100%;"></img>
       <audio controls>
         <source src="resources/musica/EyeSEEYou (1).mp3" type="audio/ogg">
         <source src="resources/musica/EyeSEEYou (1).mp3" type="audio/mpeg">
         No se pudo reproducir el audio T^T
       </div>
-      </div>
+      </section>
 
       <!-- Formulario -->
-      <form class="form">
+      <section class="form" id="donar">
 
         <h1> 🤑 ¡Dona Aquí! 🤑 </h1>
           
@@ -197,81 +217,81 @@
 
         <input type="submit" id="submit">
 
-      </form>
+      </section>
 
       <!-- Preguntas Frecuentes-->
-      <div class="descripcion" id="faq">
+      <section class="descripcion" id="faq">
         <h2>Preguntas Frecuentes</h2>
 
         <div class="pregunta">¿Cuáles son las mecánicas principales del juego? 
           <br> 
-          <span>J.M.</span>
+          <span>- J.M.</span>
         </div>
 
         <div class="respuesta">¡Sorpresa, sorpresa! Si habéis jugado algún Metroidvania, sabréis la respuesta. Aunque claro, no nos vamos a quedar ahí… Por ahora diremos que las habilidades de los personajes no son precisamente triviales.</div>
 
         <div class="pregunta">¿Vivís en la pobreza extrema?
           <br> 
-          <span>Dani Ye</span>
+          <span>- Dani Ye</span>
         </div>
 
         <div class="respuesta">Como buenos desarrolladores indie que somos, el banco está a punto de embargarnos la vivienda. Sin embargo, somos optimistas, y esperamos que el lanzamiento de este bonito juego nos permita, por lo menos, llegar a fin de mes.</div>
 
         <div class="pregunta">¿Por qué no soy You? ¿Y quién es You?
           <br> 
-          <span>nerea</span>
+          <span>- nerea</span>
         </div>
 
         <div class="respuesta">Eso son dos preguntas.</div> 
 
         <div class="pregunta">Venga, vale, ¿por qué no soy You?
           <br> 
-          <span>nerea</span>
+          <span>- nerea</span>
         </div>
 
         <div class="respuesta">Esa es fácil: porque lo dice el título del juego.</div>
 
         <div class="pregunta">¿Y la otra pregunta?
           <br> 
-          <span>nerea</span>
+          <span>- nerea</span>
         </div>
 
         <div class="respuesta">¿Cuál? Qué más da, tú ya has hecho tu pregunta, ¡siguiente!</div>
 
         <div class="pregunta">¿Cuándo saldrá el juego?
           <br> 
-          <span>Paco</span>
+          <span>- Paco</span>
         </div>
 
         <div class="respuesta">Eso depende de los objetivos que logremos. Suponiendo que consigamos todo el dinero, entonces probablemente el juego saldrá en 2027.</div>
 
         <div class="pregunta">¿Cómo pasáis la parte de papel a digital?
           <br> 
-          <span>Sofi</span>
+          <span>- Sofi</span>
         </div>
 
         <div class="respuesta">Normalmente primero hacemos los recortes y luego los escaneamos, para hacer ya la animación directamente a digital. No obstante, los personajes dibujados tienen una animación 100% tradicional.</div>
 
         <div class="pregunta">¿Quién es You?
           <br> 
-          <span>nerea</span>
+          <span>- nerea</span>
         </div>
 
         <div class="respuesta">Pues tú no. Oye, ¿a ti no te habíamos echado? ¡Fuera de aquí!</div>
 
         Hala, hasta aquí con las preguntas. Probablemente añadamos más, idlas dejando por <a href="https://docs.google.com/forms/d/e/1FAIpQLSfalFasKlghyVTIXfXysYk_bwl9ODxAPsSv4XM6bfoUU6o2ww/viewform?usp=header">aquí</a>.
-      </div>
+      </section>
 
       <!--Esqueleto-->
       <div class="scara">
-        <img src="resources/skeleton1.PNG" onclick="playSound()" id="skeleton"><br>
+        <img src="resources/skeleton1.PNG" alt="scara" onclick="playSound()" id="skeleton"><br>
         Supongo que ahora os preguntaréis quién es este tío y por qué mola tanto, ¡pues no os lo vamos a decir! Tendréis que jugar el juego para saberlo, aunque por ahora diremos que todos los juegos que tienen un esqueleto carismático son increíbles.
       </div>
 
     </main>
 
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="reward">
       <div class="square" style="border-radius: 20px 20px 0 0;">
         <button class="menu-button" style="width: 100px;" onclick="showHide('menu1')">
           <h4>1€</h4>
@@ -415,6 +435,11 @@
   <footer class="footer"> 
     ©VrGames 2025
   </footer>
+
+  <!--Botón para subir-->
+  <a href="#" class="subir">
+    <img src="resources/up-arrow.png" style="position: fixed; right: 0; top: 90%;" width="70px">
+  </a>
 
   <!-- Script de los botones-->
   <script src="test.js" defer></script>

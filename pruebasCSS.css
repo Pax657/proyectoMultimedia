@@ -6,7 +6,7 @@
 }
 
 html {
-    scroll-behavior: smooth!important;
+    scroll-behavior: smooth;
   }
 
   .title {
@@ -123,7 +123,6 @@ html {
   }
 
   .pregunta> span{
-    font-size: small;
     color: rgb(70, 70, 70);
   }
 
@@ -155,7 +154,10 @@ html {
     height: auto;
   }
 
-.botonPersonaje > button {
+.botonPersonaje > a {
+  color: black;
+  text-decoration: none;
+  
   display: flex;
   justify-self: center;
   margin-top: -35%;
@@ -163,7 +165,7 @@ html {
   font-size: x-large;
 }
 
-.botonPersonaje > button:hover {
+.botonPersonaje > a:hover {
   color: rgb(0, 94, 255);
   text-decoration: underline;
   cursor: pointer;
@@ -173,10 +175,11 @@ html {
 
 .infoPersonaje {
   height: 5rem;
-  width: 100%;
+  width: 80%;
+  justify-self: center;
 
   /*fondo*/
-  background-image: url(resources/papel.jpg);
+  background-image: url(resources/notebook.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; /*efecto chowder*/
@@ -199,7 +202,7 @@ html {
 .sidebar {
     flex: 0 0 200px;
 
-    position: sticky;
+    position: static;
     top: 30px;
     padding-bottom: 10px;
     display: flex;
@@ -270,6 +273,7 @@ html {
   }
 
   .saber {
+    color: black;
     border: transparent; 
     background: transparent;
     cursor: pointer;
@@ -392,7 +396,38 @@ html {
   margin: 1rem;
 }
 
+/*=====*/
+/*ARTE*/
+/*====*/
 
+.arte {
+  padding: 1rem;
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  column-gap: 2rem;
+  align-content: center;
+  justify-content: space-between;
+
+  background-image: url(resources/cartulina-verde.png);
+  background-repeat: repeat;
+  background-position: top;
+  background-attachment: fixed; /*efecto chowder*/
+  background-size: cover;
+}
+
+.arte > h2 {
+  grid-column: 1 / span 3;
+  padding: 2rem;
+  margin-top: -0.1rem;
+
+  background-image: url(resources/cartulina-azul.png);
+  background-repeat: repeat;
+  background-position: top;
+  background-attachment: fixed; /*efecto chowder*/
+  background-size: cover;
+}
 
 /*=======*/
 /*MUSICA*/
@@ -484,10 +519,14 @@ html {
     width: 60%;
 
     /*fondo*/
-    color: white;
-    background-color: black;
+    background-image: url(resources/papel2.png);
+    background-repeat: repeat;
+    background-position: top;
+    background-attachment: fixed; /*efecto chowder*/
+    background-size: cover;
 
     /*texto*/
+    color: white;
     align-self: center;
     text-align: center;
     font-size: medium;
