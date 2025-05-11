@@ -67,17 +67,32 @@ inputSlider.oninput = (() => {
 //Función para el contador de dinero:
 
 const display = document.getElementById("money");
-const img = document.getElementById("cerdito");
+
 let counter = 0;
 
 function add() {
     counter++;
     display.textContent = counter + " €";
 
-    if (counter > 999){
+    if (counter > 999 || counter < 0){
         display.style = "color: red;"
-        counter = 999;
     } 
 }
+
+//Sonidos
+let audio = new Audio("resources/sfx/bone.mp3");
+const img = document.getElementById("skeleton");
+
+function scara() {
+    img.src= "resources/skeleton1.PNG";
+}
+
+function playSound() {
+    img.src= "resources/skeleton2.PNG";
+    setTimeout(scara, 1000);
+    audio.play();
+}
+
+
 
 

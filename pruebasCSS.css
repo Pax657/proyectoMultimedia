@@ -33,11 +33,6 @@ html {
     font-style: normal;
   }
   
-  header {
-    text-align: center;
-    padding: 6rem 0;
-  }
-  
   .textoCentrado {
     text-align: center;
   }
@@ -88,6 +83,7 @@ html {
   }
 
   .descripcion{
+
     /*fondo*/
     background-image: url(resources/papel.jpg);
     background-repeat: no-repeat;
@@ -108,6 +104,29 @@ html {
     vertical-align: middle;
   }
 
+ .pregunta {
+    padding: 1rem;
+    margin: 2rem;
+    justify-self: left;
+    width: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    text-align: left;
+  }
+
+  .respuesta {
+    padding: 1rem;
+    margin: 2rem;
+    justify-self: right;
+    width: 50%;
+    background-color: rgba(60, 180, 255, 0.5);
+    text-align: right;
+  }
+
+  .pregunta> span{
+    font-size: small;
+    color: rgb(70, 70, 70);
+  }
+
 /*===================*/
 /* Bloques personajes */
 /*===================*/
@@ -124,49 +143,30 @@ html {
     align-items: baseline;
     padding: 2rem;
   }
-  .left-sidebar li{
-    text-align: left;
-  }
 
   /*Definicion de los botones*/
   .botonPersonaje {
-    background: transparent;
-    border: transparent;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: 100%;
-
     height: 10rem;
     width: 10rem;
-
-    text-align: center;
-    justify-items: end;
   }
 
-.botonPersonaje:hover {
-  border: 1px solid black;
+  .botonPersonaje > img {
+    width: 100%;
+    height: auto;
+  }
+
+.botonPersonaje > button {
+  display: flex;
+  justify-self: center;
+  margin-top: -35%;
+  font-family: "Tagesschrift";
+  font-size: x-large;
+}
+
+.botonPersonaje > button:hover {
+  color: rgb(0, 94, 255);
+  text-decoration: underline;
   cursor: pointer;
-}
-
-/*Definición de cada imagen de personaje*/
-
-#gota {
-  background-image: url(resources/box1.png);
-}
-
-#sol {
-  background-image: url(resources/box2.png);
-
-}
-
-#trebol {
-  background-image: url(resources/box3.png);
-}
-
-#sinson {
-  background-image: url(resources/box4.png);
 }
 
 /*Caja de info sobre presonaje*/
@@ -268,9 +268,6 @@ html {
     background-position: left;
     background-size: cover;
   }
-  .caja li{
-    text-align: left;
-  }
 
   .saber {
     border: transparent; 
@@ -283,6 +280,7 @@ html {
   }
 
   .saber:hover {
+    color: rgb(0, 94, 255);
     text-decoration: underline;
   }
 
@@ -372,7 +370,7 @@ html {
 
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin: 3rem;
   padding: 2rem;
   justify-self: center;
   width: 50%;
@@ -383,7 +381,6 @@ html {
   justify-content: center;
   margin: 1rem;
   gap: 5px;
-
 }
 
 #submit {
@@ -406,7 +403,6 @@ html {
   margin: 3rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-
 
   gap: 4rem;
   align-content: center;
@@ -437,7 +433,6 @@ html {
 #musica {
   grid-column: 1 / span 2;
 }
-  
 
   /*=======*/
   /*Footer*/
@@ -478,16 +473,46 @@ html {
   }
 
   /*=====*/
+  /*SCARA*/
+  /*=====*/
+
+  .scara {
+    /*margen*/
+    margin: 2rem;
+    padding: 1rem;
+    justify-self: center;
+    width: 60%;
+
+    /*fondo*/
+    color: white;
+    background-color: black;
+
+    /*texto*/
+    align-self: center;
+    text-align: center;
+    font-size: medium;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+
+  .scara > img {
+    width: 50%;
+    height: auto;
+  }
+    .scara > img:hover {
+      cursor: help;
+  }
+
+  /*=====*/
   /*MEDIA*/
   /*=====*/
 
   /* Para pantallas más pequeñas, estackea verticalmente */
   
   @media (max-width: 1000px) {
-
-    .body {
-      padding-left: 0%;
-      padding-right: 0%;
+    body {
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
     .sidebarWrap {
@@ -513,6 +538,10 @@ html {
     .musica {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 2fr 2fr 2fr;
+    }
+
+    .scara {
+      width: 80%;
     }
 
     #musica {

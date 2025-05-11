@@ -8,43 +8,62 @@
 </head>
 <body>
   <!-- Header -->
-  <img src="resources/Titulo.png" class="title">
-  <h2>¡No pierdas los papeles!</h2>
-
+  <header>
+    <img src="resources/Titulo.png" class="title">
+    <h2>¡No pierdas los papeles!</h2>
+  </header>
   <!-- Documento: Main content + sidebars -->
   <div class="container">
   <div class="sidebarWrap">
     <!-- Main -->
     <main class="main-content">
+      <!--Video-->
       <video controls autoplay muted loop width="500" style="padding-bottom: 20px;">
         <source src = "resources/video/trailer.mp4" alt = "I'm Not You Trailer">
         No se pudo cargar el video :c
       </video>
+
+      <!--Sinopsis-->
       <div class="descripcion">I’m Not You es un juego de plataformas en 2D al más puro estilo Metroidvania.
         ¡Adéntrate en su mundo hecho de papel! 
         Podrás controlar a cuatro personajes diferentes y utilizar sus diferentes habilidades para descifrar los secretos de este mundo.
       </div>
 
       <!-- Botones personajes -->
-      <aside class="left-sidebar">
-            <button class="botonPersonaje" id="gota" onclick="toggle('infoGota')"></button>
-            <button class="botonPersonaje" id="sol" onclick="toggle('infoSol')"></button>
-            <button class="botonPersonaje" id="trebol" onclick="toggle('infoTrebol')"></button>
-            <button class="botonPersonaje" id="sinson" onclick="toggle('infoSinson')"></button>
-      </aside>
+      <div class="left-sidebar">
+          <div class="botonPersonaje">
+            <img src="resources/box1.png">
+            <button id="gota" onclick="toggle('infoGota')">Gota</button>
+          </div>
+
+          <div class="botonPersonaje">
+            <img src="resources/box2.png">
+            <button id="sol" onclick="toggle('infoSol')">Sol</button>
+          </div>
+
+          <div class="botonPersonaje">
+            <img src="resources/box3.png">
+            <button id="trebol" onclick="toggle('infoTrebol')">Trébol</button>
+          </div>
+
+          <div class="botonPersonaje">
+            <img src="resources/box4.png">
+            <button id="sinson" onclick="toggle('infoSinson')">Demon</button>
+          </div>
+      </div>
 
       <!-- Info personajes -->
       <div class="infoPersonaje" id="infoGota" style="display: none;">
-        gota: huele a cloaca
+        Huele a cloaca
       </div>
       <div class="infoPersonaje" id="infoSol" style="display: none;">
-        sol: el dios de Andalucía
+        El dios de Andalucía
       </div>
       <div class="infoPersonaje" id="infoTrebol" style="display: none;">
-        trébol: evade impuestos
+        Adicto a las apuestas
       </div>
       <div class="infoPersonaje" id="infoSinson" style="display: none;">
-        sinson: sinson
+        Hola
       </div>
 
       <!-- Conócenos -->
@@ -52,7 +71,6 @@
         <h3>¡Conócenos!</h3>
         <button class="saber" onclick="about()" id="mas">Saber Más</button>
       </div>
-
 
       <!-- El equipo -->
       <div class="equipo" id="text" style="display: none;">
@@ -180,6 +198,75 @@
         <input type="submit" id="submit">
 
       </form>
+
+      <!-- Preguntas Frecuentes-->
+      <div class="descripcion" id="faq">
+        <h2>Preguntas Frecuentes</h2>
+
+        <div class="pregunta">¿Cuáles son las mecánicas principales del juego? 
+          <br> 
+          <span>J.M.</span>
+        </div>
+
+        <div class="respuesta">¡Sorpresa, sorpresa! Si habéis jugado algún Metroidvania, sabréis la respuesta. Aunque claro, no nos vamos a quedar ahí… Por ahora diremos que las habilidades de los personajes no son precisamente triviales.</div>
+
+        <div class="pregunta">¿Vivís en la pobreza extrema?
+          <br> 
+          <span>Dani Ye</span>
+        </div>
+
+        <div class="respuesta">Como buenos desarrolladores indie que somos, el banco está a punto de embargarnos la vivienda. Sin embargo, somos optimistas, y esperamos que el lanzamiento de este bonito juego nos permita, por lo menos, llegar a fin de mes.</div>
+
+        <div class="pregunta">¿Por qué no soy You? ¿Y quién es You?
+          <br> 
+          <span>nerea</span>
+        </div>
+
+        <div class="respuesta">Eso son dos preguntas.</div> 
+
+        <div class="pregunta">Venga, vale, ¿por qué no soy You?
+          <br> 
+          <span>nerea</span>
+        </div>
+
+        <div class="respuesta">Esa es fácil: porque lo dice el título del juego.</div>
+
+        <div class="pregunta">¿Y la otra pregunta?
+          <br> 
+          <span>nerea</span>
+        </div>
+
+        <div class="respuesta">¿Cuál? Qué más da, tú ya has hecho tu pregunta, ¡siguiente!</div>
+
+        <div class="pregunta">¿Cuándo saldrá el juego?
+          <br> 
+          <span>Paco</span>
+        </div>
+
+        <div class="respuesta">Eso depende de los objetivos que logremos. Suponiendo que consigamos todo el dinero, entonces probablemente el juego saldrá en 2027.</div>
+
+        <div class="pregunta">¿Cómo pasáis la parte de papel a digital?
+          <br> 
+          <span>Sofi</span>
+        </div>
+
+        <div class="respuesta">Normalmente primero hacemos los recortes y luego los escaneamos, para hacer ya la animación directamente a digital. No obstante, los personajes dibujados tienen una animación 100% tradicional.</div>
+
+        <div class="pregunta">¿Quién es You?
+          <br> 
+          <span>nerea</span>
+        </div>
+
+        <div class="respuesta">Pues tú no. Oye, ¿a ti no te habíamos echado? ¡Fuera de aquí!</div>
+
+        Hala, hasta aquí con las preguntas. Probablemente añadamos más, idlas dejando por <a href="https://docs.google.com/forms/d/e/1FAIpQLSfalFasKlghyVTIXfXysYk_bwl9ODxAPsSv4XM6bfoUU6o2ww/viewform?usp=header">aquí</a>.
+      </div>
+
+      <!--Esqueleto-->
+      <div class="scara">
+        <img src="resources/skeleton1.PNG" onclick="playSound()" id="skeleton"><br>
+        Supongo que ahora os preguntaréis quién es este tío y por qué mola tanto, ¡pues no os lo vamos a decir! Tendréis que jugar el juego para saberlo, aunque por ahora diremos que todos los juegos que tienen un esqueleto carismático son increíbles.
+      </div>
 
     </main>
 
@@ -317,10 +404,9 @@
       </button>
 
       <span id="money">0 €<span>
-
-      </div>
       
     </aside>
+
   </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
 - Descripción personajes
-- Meter texto que falta
+- Imágenes
 - Animaciones
 - Cambiar algunos diseños
