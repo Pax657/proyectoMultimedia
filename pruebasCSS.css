@@ -55,8 +55,8 @@ html {
   body {
     /*márgenes*/
     padding-top: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
     min-height: 100%;
 
     /*fondo*/
@@ -252,11 +252,11 @@ html {
     flex-direction: column;
     width: 20rem;
     height: 10rem;
-    margin: auto;
     margin-top: 1.5rem;
     padding-bottom: 2rem;
     gap: 2rem;
     justify-content: center;
+    justify-self: center;
 
     /*texto*/
     font-size: medium;
@@ -362,13 +362,47 @@ html {
 }
 
 
+/*==========*/
+/*FORMULARIO*/
+/*==========*/
+
+.form {
+  background-color: antiquewhite;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 2rem;
+  justify-self: center;
+  width: 50%;
+}
+
+#row {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 5px;
+
+}
+
+#submit {
+  color: white;
+  background-color: rgb(120, 201, 39);
+  border: transparent;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
 
 /*=======*/
 /*MUSICA*/
 /*=======*/
 
 .musica {
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 3rem;
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -421,14 +455,40 @@ html {
     background-color: black;
     border-radius: 8px;
   }
+
+  /*======*/
+  /*Contador dinero*/
+  /*======*/
+
+  #money {
+    color: rgb(126, 225, 139);
+    padding: 1rem;
+    align-self: center;
+    font-size: xx-large;
+  }
   
+  .botonHucha {
+    align-self: center;
+    background: transparent;
+    border: transparent;
+  }
+
+  .botonHucha:hover {
+    cursor: pointer;
+  }
+
   /*=====*/
   /*MEDIA*/
   /*=====*/
 
   /* Para pantallas más pequeñas, estackea verticalmente */
-  @media (max-width: 900px) {
+  
+  @media (max-width: 1000px) {
 
+    .body {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
 
     .sidebarWrap {
       flex-direction: column;

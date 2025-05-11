@@ -16,7 +16,7 @@
   <div class="sidebarWrap">
     <!-- Main -->
     <main class="main-content">
-      <video controls autoplay muted loop width="400" style="padding-bottom: 20px;">
+      <video controls autoplay muted loop width="500" style="padding-bottom: 20px;">
         <source src = "resources/video/trailer.mp4" alt = "I'm Not You Trailer">
         No se pudo cargar el video :c
       </video>
@@ -41,7 +41,7 @@
         sol: el dios de Andalucía
       </div>
       <div class="infoPersonaje" id="infoTrebol" style="display: none;">
-        trébol: no tiene sprite xd
+        trébol: evade impuestos
       </div>
       <div class="infoPersonaje" id="infoSinson" style="display: none;">
         sinson: sinson
@@ -53,37 +53,37 @@
         <button class="saber" onclick="about()" id="mas">Saber Más</button>
       </div>
 
+
       <!-- El equipo -->
       <div class="equipo" id="text" style="display: none;">
         
-        <div class="head"> 
-          <h2> La Crew </h2>
-          VrGames es una empresa indie formada por… ¡Nosotros! Seis colgados que decidimos hipotecar nuestra casa para seguir adelante con este proyecto. Sin embargo, el señor del monopoly ya está cansándose y aún necesitamos un poco de dinero…
-        </div>
-
-        <img class="img" src="resources/mari.png" alt="Perfil de Marina">
-        <div class="bio" id="marina"> En el apartado de dirección artística tenemos a Marina, una brillante graduada en la universidad de la vida con más de 300 premios por su arte. </div>
-          
-        <img class="img" src="resources/j.jpg" alt="Perfil de Javi">
-        <div class="bio" id="javi"> Como artista de a bordo tenemos a Javier Borriño, un médico  aventurero que decidió pasarse con nosotros al mundo del desarrollo de videojuegos. </div>
-
-        <img class="img" src="resources/pablo.png" alt="Perfil de Pablo">
-        <div class="bio" id="pablo"> Pablo Cordero, un mexicano que decidió probar suerte en España con su tienda de tacos. Fracasó. Ahora es nuestro programador senior. </div>
-
-        <img class="img" src="resources/beni.png" alt="Perfil de David">
-        <div class="bio" id="david"> David Benitez, padre divorciado de cinco hijos, sirve como programador en prácticas y como editor profesional de vídeo. </div>
-
-        <img class="img" src="resources/javi.png" alt="Perfil de Vázquez"> 
-        <div class="bio" id="vazquez"> En el apartado musical y de redacción tenemos a Javier Vázquez, un chaval guatemalteco al que rescatamos de un traficante de personas.  </div>
-        
-        <div class="foot">
-          ¡Y esos somos nosotros! Podéis seguirnos en redes sociales para ver cómo avanzamos en nuestro proyecto, ¡no olvidéis compartirlo con vuestros amigos!
-        </div>
+      <div class="head"> 
+        <h2> La Crew </h2>
+        VrGames es una empresa indie formada por… ¡Nosotros! Seis colgados que decidimos hipotecar nuestra casa para seguir adelante con este proyecto. Sin embargo, el señor del monopoly ya está cansándose y aún necesitamos un poco de dinero…
       </div>
 
-          <!-- Musica -->
+      <img class="img" src="resources/mari.png" alt="Perfil de Marina">
+      <div class="bio" id="marina"> En el apartado de dirección artística tenemos a Marina, una brillante graduada en la universidad de la vida con más de 300 premios por su arte. </div>
+          
+      <img class="img" src="resources/j.jpg" alt="Perfil de Javi">
+      <div class="bio" id="javi"> Como artista de a bordo tenemos a Javier Borriño, un médico  aventurero que decidió pasarse con nosotros al mundo del desarrollo de videojuegos. </div>
 
-    <div class="musica">
+      <img class="img" src="resources/pablo.png" alt="Perfil de Pablo">
+      <div class="bio" id="pablo"> Pablo Cordero, un mexicano que decidió probar suerte en España con su tienda de tacos. Fracasó. Ahora es nuestro programador senior. </div>
+
+      <img class="img" src="resources/beni.png" alt="Perfil de David">
+      <div class="bio" id="david"> David Benitez, padre divorciado de cinco hijos, sirve como programador en prácticas y como editor profesional de vídeo. </div>
+
+      <img class="img" src="resources/javi.png" alt="Perfil de Vázquez"> 
+      <div class="bio" id="vazquez"> En el apartado musical y de redacción tenemos a Javier Vázquez, un chaval guatemalteco al que rescatamos de un traficante de personas.  </div>
+        
+      <div class="foot">
+        ¡Y esos somos nosotros! Podéis seguirnos en redes sociales para ver cómo avanzamos en nuestro proyecto, ¡no olvidéis compartirlo con vuestros amigos!
+      </div>
+      </div>
+      
+      <!-- Musica -->
+      <div class="musica">
       <div class="bloque-cancion" id="musica">
         <h2>🎵 MÚSICA 🎵</h2>
       </div>
@@ -117,12 +117,74 @@
         <source src="resources/musica/EyeSEEYou (1).mp3" type="audio/mpeg">
         No se pudo reproducir el audio T^T
       </div>
-    </div>
+      </div>
+
+      <!-- Formulario -->
+      <form class="form">
+
+        <h1> 🤑 ¡Dona Aquí! 🤑 </h1>
+          
+        <label for="name"> Nombre: </label>
+        <input type="text" id="name" placeholder="Benito">
+        <br>
+
+        <label for="surname"> Apellido: </label>
+        <input type="text" id="surname" placeholder="Benítez">
+        <br>
+
+        <div id="row">
+
+          <label for="man"> Hombre </label>
+          <input type="radio" id="man" value="man" name="gender">
+          <br>
+          <label for="woman"> Mujer </label>
+          <input type="radio" id="woman" value="woman" name="gender">
+
+        </div>
+
+        <label for="email"> Email: </label>
+        <input type="email" id="email" placeholder="beni@gmail.com">
+        <br>
+
+        <label for="cuantity"> Cantidad: </label>
+        <input type="range" id="cuantity" min="0" max="100">
+        <div>
+          <span id="sliderValue">50</span>
+          <span>€</span>
+        </div>
+        <br>
+
+        <label> Método de pago: </label>
+          <select>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="paypal">PayPal</option>
+            <option value="restaurant">Ticket Restaurante</option>
+          </select>
+        <br>
+
+        <label for="card"> Nº Tarjeta: </label>
+        <input type="tel" id="card" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
+        <br>
+
+        <label for="adresss"> Dirección: </label>
+        <input type="text" id="adresss" placeholder="Calle Colombia Nº3">
+        <br>
+          
+        <div id="row">
+          <label> No soy un robot: </label>
+          <input type="checkbox" required>
+          <br>
+        </div>
+
+        <input type="submit" id="submit">
+
+      </form>
+
     </main>
 
-
     <!-- Sidebar -->
-     <aside class="sidebar">
+    <aside class="sidebar">
       <div class="square" style="border-radius: 20px 20px 0 0;">
         <button class="menu-button" style="width: 100px;" onclick="showHide('menu1')">
           <h4>1€</h4>
@@ -249,10 +311,15 @@
           <li>Si de verdad vas a donar esa cantidad, entonces el desarrollador Javi Vázquez se abre un Only Fans de pies y te regala el premium</li>
         </ul>
       </div>
-      
-      
 
-      <img src="resources/cerdito.gif" class = "hucha">
+      <button class="botonHucha" onclick="add()">
+        <img src="resources/cerdito.gif" class = "hucha" id="cerdito">
+      </button>
+
+      <span id="money">0 €<span>
+
+      </div>
+      
     </aside>
   </div>
   </div>
