@@ -1,4 +1,4 @@
-- Descripción personajes
-- Imágenes
+
+-Mover cositas
 - Animaciones
 - Cambiar algunos diseños
