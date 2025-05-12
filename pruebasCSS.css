@@ -40,10 +40,26 @@ html {
   /* Menu, cómo luce  */
   #menu {
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto;
     width: fit-content;
-    padding: 10px;
+    padding: 0;
     list-style: none;
+    font-size: large;
+  }
+
+  .menu{
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .menu a{
+    flex: 1;
+
+    padding: 15px 20px;
+    border-left: 1px solid #ccc;
+    text-align: center;
   }
   
   /* Fondos y como luce de manera general*/
@@ -81,6 +97,7 @@ html {
     text-align: center;
     margin-right: 1rem;
   }
+
 
   .descripcion{
 
@@ -321,12 +338,14 @@ html {
       padding: 2.1rem;
       line-height: 1.5;
       height: max-content;
+      font-size: large;
     }
 
     .head {
       grid-column: 1 / span 2;
       text-align: center;
       line-height: 1.5;
+      font-size: larger;
     }
 
     .foot {
