@@ -67,30 +67,45 @@ inputSlider.oninput = (() => {
 //Función para el contador de dinero:
 
 const display = document.getElementById("money");
+let bDelay = false;
 
 let counter = 0;
+let money = new Audio("resources/sfx/money.mp3")
+const anim = document.getElementById("cerdito");
+
+function stopAnim() {
+    anim.src= "resources/cerdito1.png";
+    bDelay = false;
+}
 
 function add() {
+    if (bDelay === false) {
     counter++;
+    anim.src= "resources/cerdito2.gif";
+    money.play();
     display.textContent = counter + " €";
-
-    if (counter > 999 || counter < 0){
-        display.style = "color: red;"
+    setTimeout(stopAnim, 900);
+    bDelay = true;
     } 
 }
 
 //Sonidos
 let audio = new Audio("resources/sfx/bone.mp3");
 const img = document.getElementById("skeleton");
+let aDelay = false;
 
 function scara() {
     img.src= "resources/skeleton1.PNG";
+    aDelay = false;
 }
 
 function playSound() {
-    img.src= "resources/skeleton2.PNG";
-    setTimeout(scara, 1000);
-    audio.play();
+    if(aDelay === false) {
+        img.src= "resources/skeleton2.PNG";
+        audio.play();
+        setTimeout(scara, 1500);
+        aDelay = true;
+    }
 }
 
 

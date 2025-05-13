@@ -37,7 +37,7 @@ html {
     text-align: center;
   }
   
-  /* Menu, cómo luce  */
+  /* MENÚ CONTENIDOS */
   #menu {
     text-align: center;
     margin: 20px auto;
@@ -50,24 +50,35 @@ html {
   .menu{
     background-color: aliceblue;
     display: flex;
+    flex-wrap: wrap;
     border-radius: 10px;
     overflow: hidden;
   }
 
   .menu a{
     flex: 1;
-
     padding: 15px 20px;
-    border-left: 1px solid #ccc;
     text-align: center;
+
+    color: black;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    background-color: rgb(143, 148, 152);
+    color: white;
+  }
+
+  #recompensas {
+    display: none;
   }
   
   /* Fondos y como luce de manera general*/
   body {
     /*márgenes*/
     padding-top: 10px;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
     min-height: 100%;
 
     /*fondo*/
@@ -87,7 +98,7 @@ html {
     display: flex;
     justify-content: center;   /* Centra el grupo contenedor horizontalmente */
     align-items: flex-start;   /* Alinea por arriba */
-    gap: 2rem;                 /* Espacio entre contenido y sidebar */
+    gap: 2rem;               /* Espacio entre contenido y sidebar */
   }
   
   /* Estilo contenido main */
@@ -115,7 +126,7 @@ html {
     /*texto*/
     align-self: center;
     text-align: center;
-    font-size: medium;
+    font-size: large;
     padding: 2rem;
     line-height: 1.5;
     vertical-align: middle;
@@ -128,6 +139,7 @@ html {
     width: 50%;
     background-color: rgba(255, 0, 0, 0.5);
     text-align: left;
+    font-size: large;
   }
 
   .respuesta {
@@ -137,6 +149,7 @@ html {
     width: 50%;
     background-color: rgba(60, 180, 255, 0.5);
     text-align: right;
+    font-size: large;
   }
 
   .pregunta> span{
@@ -259,8 +272,23 @@ html {
     height: auto;
   }
 
+  .menu-button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+
+    border: none;
+    background-color: rgba(0, 0 ,0 ,0);
+    padding: 1rem;
+
+    background-image: url(resources/posit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+  }
+
   .menu-button:hover{
     cursor: pointer;
+    color: rgb(55, 205, 98);
   }
 
   /*=========*/
@@ -345,12 +373,13 @@ html {
       grid-column: 1 / span 2;
       text-align: center;
       line-height: 1.5;
-      font-size: larger;
+      font-size: large;
     }
 
     .foot {
       grid-column: 1 / span 2;
       line-height: 1.5;
+      font-size: large;
     }
 
     #david{
@@ -397,6 +426,7 @@ html {
   padding: 2rem;
   justify-self: center;
   width: 50%;
+  font-size: large;
 }
 
 #row {
@@ -413,6 +443,10 @@ html {
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem;
+}
+
+#submit:hover {
+  cursor: pointer;
 }
 
 /*=====*/
@@ -551,6 +585,7 @@ html {
     font-size: medium;
     line-height: 1.5;
     vertical-align: middle;
+    font-size: large;
   }
 
   .scara > img {
@@ -611,5 +646,9 @@ html {
       position: static;
       
     }
+
+    #recompensas {
+    display: block;
+  }
   }
   
