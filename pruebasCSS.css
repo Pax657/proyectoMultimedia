@@ -19,7 +19,7 @@ html {
     letter-spacing: 0.2rem;
     text-align: center;
   
-    font-family: "MyFont";
+    font-family: "Tagesschrift", system-ui;
     font-weight: 600;
     font-style: italic;
   }
@@ -30,6 +30,11 @@ html {
 
     font-family: "Tagesschrift", system-ui;
     font-weight: 400;
+    font-style: normal;
+  }
+
+  header > h2 {
+    font-family: "MyFont";
     font-style: normal;
   }
   
