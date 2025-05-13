@@ -232,7 +232,7 @@ html {
 .sidebar {
     flex: 0 0 200px;
 
-    position: static;
+    position: sticky;
     top: 30px;
     padding-bottom: 10px;
     display: flex;
@@ -594,6 +594,16 @@ html {
   }
     .scara > img:hover {
       cursor: help;
+  }
+
+  /*======*/
+  /*DISQUS*/
+  /*======*/
+
+  #disqus_thread{
+    background-color: bisque;
+    padding: 2rem;
+    margin: 2rem;
   }
 
   /*=====*/
