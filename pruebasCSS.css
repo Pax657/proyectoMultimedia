@@ -172,7 +172,7 @@ html {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: baseline;
     padding: 2rem;
@@ -234,13 +234,11 @@ html {
     display: flex;
     align-items: flex-start;
   }
-
 .sidebar {
     flex: 0 0 200px;
 
     position: sticky;
     top: 30px;
-    height: 315rem;
     padding-bottom: 10px;
     display: flex;
     max-width: 200px;
@@ -290,7 +288,7 @@ html {
     background-image: url(resources/posit.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 95%;
+    background-size: 100%;
   }
 
   .menu-button:hover{
@@ -621,12 +619,23 @@ html {
   
   @media (max-width: 1000px) {
     body {
-      padding-left: 0%;
-      padding-right: 0%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
     .sidebarWrap {
       flex-direction: column;
+    }
+
+    .sidebar {
+      max-width: 60%;
+      width: 60%;
+      
+    }
+
+    .menu-button {
+      padding: 9rem;
+      font-size: xx-large;
     }
 
     .title {
