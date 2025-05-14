@@ -238,7 +238,7 @@ html {
 .sidebar {
     flex: 0 0 200px;
 
-    position: relative;
+    position: sticky;
     top: 30px;
     height: 315rem;
     padding-bottom: 10px;
