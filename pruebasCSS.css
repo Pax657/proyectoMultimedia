@@ -229,18 +229,12 @@ html {
 /*======*/
 
   /* Sidebar estilos */
-
-  .sidebarWrap{
-    display: flex;
-    align-items: flex-start;
-  }
-
 .sidebar {
     flex: 0 0 200px;
 
     position: sticky;
     top: 30px;
-    margin-bottom: 400px;
+    bottom: 400px;
     padding-bottom: 10px;
     display: flex;
     max-width: 200px;
