@@ -240,7 +240,7 @@ html {
 
     position: sticky;
     top: 30px;
-    bottom: 400px;
+    margin-bottom: 400px;
     padding-bottom: 10px;
     display: flex;
     max-width: 200px;
