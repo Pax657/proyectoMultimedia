@@ -53,7 +53,7 @@ html {
   }
 
   .menu{
-    background-color: aliceblue;
+    background-color: antiquewhite;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -70,7 +70,7 @@ html {
   }
 
   .menu a:hover {
-    background-color: rgb(143, 148, 152);
+    background-color: rgb(151, 155, 157);
     color: white;
   }
 
@@ -144,7 +144,7 @@ html {
     width: 50%;
     background-color: rgba(255, 0, 0, 0.5);
     text-align: left;
-    font-size: large;
+    font-size: larger;
   }
 
   .respuesta {
@@ -154,7 +154,7 @@ html {
     width: 50%;
     background-color: rgba(60, 180, 255, 0.5);
     text-align: right;
-    font-size: large;
+    font-size: larger;
   }
 
   .pregunta> span{
