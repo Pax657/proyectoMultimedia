@@ -239,7 +239,7 @@ html {
 
     position: sticky;
     top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 240rem;
     display: flex;
     max-width: 200px;
     flex-direction: column; /* Pone los cuadros en vertical */
